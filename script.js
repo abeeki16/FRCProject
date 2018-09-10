@@ -1,8 +1,15 @@
 var input = document.getElementById("teamInput");
-
+var scout = document.getElementById("scoutTeam");
+var dialog = document.getElementById("scoutDialog");
 // Execute a function when the user releases a key on the keyboard
 var obj;
 var txt="";
+
+scout.addEventListener("click",function() {
+	dialog.showModal();
+});
+	
+
 input.addEventListener("keyup", function(event) {
   // Cancel the default action, if needed
   event.preventDefault();
